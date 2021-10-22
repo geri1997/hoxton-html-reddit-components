@@ -192,7 +192,10 @@ h2.h2-1{
   background-image: linear-gradient(rgba(0, 0, 0, 0.527),rgba(0, 0, 0, 0.5)), url("https://external-preview.redd.it/bkOuH9e_8Sxhvlc7XyDWqKshzzGKIXVRet8qUx2IH50.jpg?auto=webp&s=150bb740036ceafaca537520507faaf302f18a6e");
 }
 
-
+h2.popular-posts-title{
+    font-size: 20px;
+    font-weight: bold;
+}
 .posts {
   grid-area: posts;
 
@@ -207,8 +210,46 @@ h2.h2-1{
   place-items: center;
   background-color: rgba(255, 255, 255, 0.4);
   border-radius: 5px;
+  background-image: url("Capture1231231232.PNG");
+  background-size: cover;
 }
-
+#my-post{
+    background-image: none;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: 40px 1fr;
+}
+.main-post{
+    background-color: white;
+    display: grid;
+    grid-template-rows: 30px auto 50px;
+}
+.meta{
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto auto auto;
+}
+#my-post .votes{
+    
+    
+    padding-bottom: 70px;
+    grid-gap: 10px;
+    display: grid;
+    justify-content: center;
+    
+    justify-items: start;
+}
+.meta .subreddit img{
+    width: 25px;
+    height: 15px;
+    border-radius: 20px;
+}
+#my-post .votes img{
+    /* width: 20px; */
+    height: 16px;
+    background-image: none;
+    padding-left: 10px;
+}
 .side-bar {
   grid-area: side-bar;
 
