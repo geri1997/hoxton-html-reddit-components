@@ -332,9 +332,17 @@ h2.popular-posts-title{
     button.s1-2, button.s1{
         display: none;
     }
+
     .side-bar{
         display: none;
     }
+    .main-content {
+        grid-template:
+          'trending' auto
+          'popular-posts-title' auto    
+          'posts' 1fr /
+          680px;
+      }
 
 }
 @media screen and (max-width: 700px) {
