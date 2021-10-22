@@ -218,16 +218,21 @@ h2.popular-posts-title{
     background-size: cover;
     display: grid;
     grid-template-columns: 40px 1fr;
+    overflow: hidden;
 }
 .main-post{
+    padding-left: 10px;
+    padding-right: 10px;
     background-color: white;
     display: grid;
-    grid-template-rows: 30px auto 50px;
+    grid-template-rows: 30px auto 30px;
+    grid-gap: 5px;
+    overflow: hidden;
 }
 .meta{
     display: grid;
     align-items: center;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 120px auto auto;
 }
 #my-post .votes{
     
@@ -238,6 +243,42 @@ h2.popular-posts-title{
     justify-content: center;
     
     justify-items: start;
+}
+#grey-small{
+    color: #b7b9ba;
+    padding-left: 10px;
+}
+#post-title{
+    font-size: 20px;
+    font-weight: bold;
+}
+#join{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.meta button{
+    text-align: center;
+    /* padding: 2px;
+    padding-bottom: 5px; */
+    background-color: #0079d3;
+    place-items: center;
+    height: 25px;
+    margin-top: 5px;
+    margin-right: 15px;
+    border-radius: 20px;
+    width: 70px;
+    align-self: center;
+    justify-self: center;
+    vertical-align: middle;
+    color: white;
+}
+.meta button p{
+    font-weight: bold;
+
+}
+.meta button img{
+    width: 20px;
+    height: 20px;
 }
 .meta .subreddit img{
     width: 25px;
@@ -256,6 +297,18 @@ h2.popular-posts-title{
   display: grid;
   align-content: start;
   grid-gap: 15px;
+}
+.action-button{
+    border: none;
+    background-color: white;
+    color: #8d9092;
+    margin-left: 10px;
+    font-weight: bold;
+    font-size: 13px;
+}
+.action-button img{
+    width: 15px;
+    background-color: white;
 }
 
 .side-bar .widget {
