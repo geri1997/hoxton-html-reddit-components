@@ -325,12 +325,31 @@ h2.popular-posts-title{
   position: sticky;
   top: 15px;
 }
+@media screen and (max-width: 930px) {
+    button.s1-2, button.s1{
+        display: none;
+    }
+    .side-bar{
+        display: none;
+    }
 
+}
 @media screen and (max-width: 700px) {
+    .header{
+        display: grid;
+        grid-template-columns: 100px 1fr 50px ;
+    }
+    div.search-box{
+        margin: 0;
+    }
+    input#header-search-bar{
+        margin: 0;
+        margin-right: 10px;
+    }
   .main-content {
     grid-template:
       'trending' auto
-      'popular-posts-title' auto
+      'popular-posts-title' auto    
       'posts' 1fr /
       1fr;
   }
@@ -340,4 +359,24 @@ h2.popular-posts-title{
   }
 }
 
+@media screen and (max-width: 600px) {
+    .main-post div.content p{
+        display: none;
+    }
+    #grey-small{
+        font-size: 12px;
+    }
+    #join{
+        margin: 0;
+    }
+    .main-post{
+        padding-left: 10px;
+        padding-right: 10px;
+        background-color: white;
+        display: grid;
+        grid-template-rows: 30px 1fr 30px;
+        /* grid-gap: 5px; */
+        overflow: hidden;
+    }
+}
   
