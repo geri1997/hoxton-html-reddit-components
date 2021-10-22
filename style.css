@@ -228,6 +228,9 @@ h2.popular-posts-title{
     grid-template-rows: 30px auto 30px;
     grid-gap: 5px;
     overflow: hidden;
+    margin-top: 10px;
+        cursor: url('https://cdn.discordapp.com/emojis/897455081727852594.png?size=60'), auto;	
+      
 }
 .meta{
     display: grid;
