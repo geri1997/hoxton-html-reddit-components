@@ -33,6 +33,7 @@
   }
   .header{
       display: grid;
+      /* border-bottom: 1px solid gray; */
       grid-template-columns: 150px 1fr 350px ;
       
   }
@@ -317,16 +318,150 @@ h2.popular-posts-title{
 .side-bar .widget {
   border: solid 1px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  height: 200px;
+  
   background-color: white;
-
+    
   display: grid;
-  place-items: center;
+  
+}
+.side-bar .widget.two{
+    height: 106px;
+}
+.side-bar .widget.two .premium{
+    
+    display: grid;
+    grid-gap: 10px;
+    padding: 15px;
+    padding-bottom: 0px;
+    grid-template-columns: 30px 250px;
 }
 
+.side-bar .widget.two .premium img{
+    height: 30px;
+    width: 30px;
+}
+.side-bar .widget.two .premium span{
+    
+    font-size: 15px;
+}
+.side-bar .widget.two .premium p{
+    
+    font-size: 12px;
+}
+.side-bar .widget.two button{
+    margin: 15px;
+    height: 32px;
+    border: none;
+    font-weight: bold;
+    border-radius: 20px;
+    color: white;
+background-color: #ff4500;
+}
+
+
+.communities{
+    
+    text-align: center;
+    /* padding-left: 40px; */
+}
+ol li{
+    list-style-type: none;
+    font-weight: 700;
+    display: grid;
+    margin: 5px;
+    align-items: center;
+    /* justify-content: center; */
+    grid-gap: 10px;
+    
+    grid-template-columns: 20px 32px 86px;
+}
+ol a, ol a:visited ol a:active{
+    text-decoration: none;
+    color: black;
+    
+}
+.tags .tag-button{
+    background-color: #f6f7f8;
+    border: none;
+    color: #1382d5;
+    border-radius: 20px;
+    margin-left: 5px;
+    font-weight: 600;
+    padding: 10px;
+}
+.communities ol li img{
+    height: 32px;
+    width: 32px;
+    border-radius: 30px;
+    border: 1px solid gray;
+}
+
+div.widget.one button.view{
+    margin: 12px;
+    background-color: #0079d3;
+    color: white;
+    font-weight: 600;
+    border-radius: 20px;
+}
+.top-news{
+    display: grid;
+    grid-template-rows: 50px 30px;
+    height: 80px;
+    width: 300px;
+    border: none;
+    color: white;
+    background-image: url("https://styles.redditmedia.com/t5_2sgp1/styles/bannerBackgroundImage_bgyq269jfpr31.jpg?format=pjpg&s=b46a9c0addfbfabc6dd7899b88fbb4afb3bc5805");
+}
+.top-news p{
+    padding-left: 15px;
+    font-size: 20px;
+    font-weight: 600;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+
 .side-bar .widget.three {
+    height: 222px;
   position: sticky;
+  font-size: 13px;
+  padding: 20px;
+  display: grid;
+  
+  grid-template-columns: 155px 155px;
   top: 15px;
+}
+.to-top button{
+    background-color: #1484d6;
+    color: white;
+    font-weight: bold;
+    width: 112px;
+    height: 32px;
+    border-radius: 20px;
+    
+}
+.to-top{
+    top: 252px;
+    text-align: center;
+    position: sticky;
+ 
+}
+.widget.three a{
+    color: #9d9d9d;
+    text-decoration: none;
+}
+.widget.three .help{
+    display: grid;
+    height: 133px;
+}
+.widget.three .about-3{
+    display: grid;
+}
+.side-bar .widget.one{
+    height: 413px;
+    display: grid;
+    grid-template-rows: 80px 230px 56px 47px;
+    
+    
 }
 @media screen and (max-width: 930px) {
     button.s1-2, button.s1{
