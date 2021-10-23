@@ -470,7 +470,24 @@ div.widget.one button.view{
     button.s1-2, button.s1{
         display: none;
     }
-
+    div.trending-item{
+        background-size: cover;
+    }
+    #header-search-bar{
+        margin: 0px;
+    }
+    div.account{
+        display: block;
+        width: 50px;
+        align-self: center;
+        justify-self: end;
+    }
+    .header{
+        grid-template-columns: 150px 1fr 70px;
+    }
+    button#b3{
+        margin: 0px;
+    }
     .side-bar{
         display: none;
     }
@@ -490,6 +507,12 @@ div.widget.one button.view{
     }
     div.search-box{
         margin: 0;
+    }
+    div.in-trend{
+        font-size: 10px;
+    }
+    div.trending-item{
+        background-size: contain;
     }
     input#header-search-bar{
         margin: 0;
