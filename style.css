@@ -297,7 +297,7 @@ h2.popular-posts-title{
 }
 .side-bar {
   grid-area: side-bar;
-
+    width: 300px;
   display: grid;
   align-content: start;
   grid-gap: 15px;
@@ -318,7 +318,7 @@ h2.popular-posts-title{
 .side-bar .widget {
   border: solid 1px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  
+  width: 300px;
   background-color: white;
     
   display: grid;
@@ -326,6 +326,7 @@ h2.popular-posts-title{
 }
 .side-bar .widget.two{
     height: 106px;
+    width: 300px;
 }
 .side-bar .widget.two .premium{
     
@@ -349,8 +350,10 @@ h2.popular-posts-title{
     font-size: 12px;
 }
 .side-bar .widget.two button{
-    margin: 15px;
+    /* margin: 15px; */
     height: 32px;
+    margin-left: 10px;
+    width: 280px;
     border: none;
     font-weight: bold;
     border-radius: 20px;
